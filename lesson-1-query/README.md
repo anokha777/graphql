@@ -7,6 +7,7 @@ Simple introduction of Server side GraphQL
 3. open two terminals
 4. on 1st terminal run- npm run json:server
 5. on 2nd terminal run- npm run dev
+
 # json server:
 1. http://localhost:3000/companies/2/users
 2. http://localhost:3000/companies
