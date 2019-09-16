@@ -17,7 +17,7 @@ Simple introduction of Server side GraphQL
 http://localhost:4000/graphql
 
 # Get Queries
-1. get user:23 and its company
+1. get user:23 and its company <br />
 {
   user(id: "23") {
     firstName,
@@ -30,7 +30,7 @@ http://localhost:4000/graphql
   }
 }
 
-2. get company: 1
+2. get company: 1 <br />
 {
   company(id: "1") {
     id,
@@ -39,7 +39,7 @@ http://localhost:4000/graphql
   }
 }
 
-3. get company and associated users:
+3. get company and associated users: <br />
 query getCompanyAssociatedUsers {
   company(id: "2") {
     name,
@@ -51,7 +51,7 @@ query getCompanyAssociatedUsers {
   }
 }
 
-4. put two query request in same query:
+4. put two query request in same query: <br />
 {
   resultName1: company(id: "1") {
     id,
@@ -66,7 +66,7 @@ query getCompanyAssociatedUsers {
   }
 }
 
-5. Query fragment:
+5. Query fragment: <br />
 {
   resultName1: company(id: "1") {
     ...companyDetail
@@ -84,7 +84,7 @@ fragment companyDetail on Company {
 }
 
 # Create Query
-1. add new user
+1. add new user <br />
 mutation {
   addUser(firstName: "Test User", age: "17") {
     id
@@ -94,7 +94,7 @@ mutation {
 }
 
 # Delete Query
-1. delete user
+1. delete user <br />
 mutation {
   deleteUser(id: "q6DaO9s") {
     id
@@ -102,7 +102,7 @@ mutation {
 }
 
 # Update Query
-1. update user
+1. update user <br />
 mutation {
   updateUser(id: "ESBhO9E", firstName: "Updated user111", age: 10) {
     id
